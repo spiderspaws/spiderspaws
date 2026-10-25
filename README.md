@@ -1,3 +1,3 @@
 python, java, c++, c#, lua, rust
-📍 philipines
+📍 Philippines
 📩 margaretteperez853@gmail.com
