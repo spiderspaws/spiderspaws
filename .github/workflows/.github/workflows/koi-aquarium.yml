@@ -1,21 +1,4 @@
-- uses: reginaldalfret/git-koi-aquarium@v1
-  with:
-    # Target GitHub login (defaults to repository owner)
-    login: ${{ github.repository_owner }}
-
-    # Render mode: 'aquarium', 'all', or a single variety ('asagi', 'gold', 'white', 'black', 'tea', 'platinum')
-    # Default: 'white'
-    body: aquarium
-
-    # Destination folder relative to repository root
-    # Default: 'koi'
-    output-dir: koi
-
-    # GitHub token for querying public contribution data
-    # Default: ${{ github.token }}
-    token: ${{ secrets.GITHUB_TOKEN }}
-
-    name: Generate GitHub Koi Aquarium
+name: Generate GitHub Koi Aquarium
 
 on:
   schedule:
@@ -46,3 +29,4 @@ jobs:
             git commit -m "chore: update daily koi aquarium [skip ci]"
             git push
           fi
+          
